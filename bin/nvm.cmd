@@ -8,7 +8,7 @@ IF NOT EXIST "%NODE_EXE%" (
   SET "NODE_EXE=node"
 )
 
-"%NODE_EXE%" "%~dp0\..\dist\nvm.js" %1 %2
+"%NODE_EXE%" "%~dp0\..\dist\nvm.js" %1 %2 %3 %4
 
 ENDLOCAL
 
