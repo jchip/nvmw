@@ -8,7 +8,7 @@ Try {
 
     $NVM_JS = "$PSScriptRoot\..\dist\nvm.js"
 
-    & $NODE_EXE $NVM_JS $args[0] $args[1]
+    & $NODE_EXE $NVM_JS $args[0] $args[1] $args[2] $args[3]
 }
 Finally {
     Remove-Item Env:\NVM_POWERSHELL
