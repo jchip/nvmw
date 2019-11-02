@@ -36,7 +36,7 @@ Tested on Windows 10, 8.1, and 7. Windows 7 requires PowerShell updates, see [up
 
 To install, start a Windows PowerShell and copy and paste one of the scripts below into the shell terminal and press enter.
 
-- This will install nvm and current LTS Node.js (v10.16.3) to directory `nvm` under your home specified by `$Env:USERPROFILE`.
+- This will install nvm and current LTS Node.js (v12.13.0) to directory `nvm` under your home specified by `$Env:USERPROFILE`.
 
 - If you want to install this under another directory, then set it with the param `-nvmhome`.
 
