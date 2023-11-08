@@ -50,7 +50,7 @@ function getLtsVersion() {
 
     Try {
         Invoke-WebRequest $nodejsOrg -OutFile $nodejsHtml
-        $M = Select-String -CaseSensitive -Path $nodejsHtml -Pattern 'Download[ *](.+)[ *]LTS'
+        $M = Select-String -CaseSensitive -Path $nodejsHtml -Pattern '(\d+\.\d+\.\d+)(?= LTS)'
 
         $G = $M.Matches.Groups[1]
         if ($G.Success) {
